@@ -1,0 +1,261 @@
+/* Google Fonts */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7;
+    color: #444;
+    padding-top: 70px; /* Sesuaikan dengan tinggi navbar */
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-link {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Variabel Warna Tema Ungu */
+:root {
+    --primary-purple: #6A0DAD; /* Ungu Tua Pekat (Deep Purple) */
+    --secondary-purple: #8A2BE2; /* Biru Ungu (Blue Violet) */
+    --light-purple: #E0B0FF; /* Ungu Lavender Muda */
+    --dark-purple-bg: #301934; /* Ungu Gelap untuk Latar */
+    --text-light: #f8f9fa;
+    --text-dark: #343a40;
+    --border-light-purple: #c8a2c8; /* Lilac untuk border atau aksen */
+    --primary-purple-rgb: 106, 13, 173; /* Untuk Bootstrap shadow/opacity */
+}
+
+.primary-text {
+    color: var(--primary-purple) !important;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(48, 25, 52, 0.9); /* var(--dark-purple-bg) dengan opacity */
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+    padding: 0.8rem 0;
+}
+.navbar.scrolled {
+    background-color: var(--dark-purple-bg);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    padding: 0.5rem 0;
+}
+.navbar-brand {
+    font-size: 1.75rem;
+    color: var(--light-purple) !important;
+}
+.navbar-brand:hover {
+    color: #fff !important;
+}
+.nav-link {
+    color: rgba(248, 249, 250, 0.85) !important; /* var(--text-light) */
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+.nav-link:hover, .nav-link.active {
+    color: #fff !important;
+    /* border-bottom: 2px solid var(--light-purple); */
+}
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.2);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28224, 176, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary-purple) 0%, var(--secondary-purple) 100%);
+    position: relative;
+    overflow: hidden; /* Untuk pseudo-elements jika ada */
+}
+.hero-section .display-3 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.hero-section .lead {
+    font-size: 1.3rem;
+    font-weight: 400;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-cta-btn {
+    border-width: 2px;
+    padding: 0.8rem 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+.hero-cta-btn:hover {
+    background-color: var(--text-light) !important;
+    color: var(--primary-purple) !important;
+    transform: translateY(-3px);
+}
+
+/* Section Titles */
+.section-title {
+    font-weight: 700;
+    color: var(--primary-purple);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem; /* Kurangi margin bawah agar lebih dekat dengan hr */
+}
+.title-hr {
+    width: 80px;
+    height: 3px;
+    background-color: var(--secondary-purple);
+    border: none;
+    opacity: 1;
+    margin: 0 auto 2.5rem auto; /* Atur margin atas dan bawah */
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+}
+.about-img {
+    border: 5px solid var(--light-purple);
+}
+
+/* Services Section */
+.bg-light-custom {
+    background-color: #f9f4fd !important; /* Sangat muda ungu */
+}
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(var(--primary-purple-rgb), 0.15) !important;
+}
+.service-icon i {
+    color: var(--secondary-purple);
+    transition: transform 0.3s ease;
+}
+.service-card:hover .service-icon i {
+    transform: scale(1.1);
+}
+
+/* Portfolio Section */
+.portfolio-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(var(--primary-purple-rgb), 0.12);
+}
+.portfolio-card .card-img-top {
+    aspect-ratio: 16 / 10; /* Jaga rasio gambar */
+    object-fit: cover;
+}
+.portfolio-card .card-title {
+    color: var(--primary-purple);
+}
+
+/* Buttons Kustom */
+.btn-primary-custom {
+    background-color: var(--primary-purple) !important;
+    border-color: var(--primary-purple) !important;
+    color: #fff !important;
+    padding: 0.6rem 1.5rem;
+    font-weight: 500;
+    border-radius: 50px; /* Tombol lebih bulat */
+    transition: all 0.3s ease;
+}
+.btn-primary-custom:hover, .btn-primary-custom:focus {
+    background-color: var(--secondary-purple) !important;
+    border-color: var(--secondary-purple) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+.btn-outline-primary-custom {
+    color: var(--primary-purple) !important;
+    border-color: var(--primary-purple) !important;
+    padding: 0.6rem 1.5rem;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+.btn-outline-primary-custom:hover, .btn-outline-primary-custom:focus {
+    background-color: var(--primary-purple) !important;
+    color: #fff !important;
+    transform: translateY(-2px);
+}
+
+/* Contact Form */
+#contactForm .form-control {
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
+}
+#contactForm .form-control:focus {
+    border-color: var(--secondary-purple);
+    box-shadow: 0 0 0 0.25rem rgba(var(--primary-purple-rgb), 0.2);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-purple-bg);
+}
+.footer p {
+    margin-bottom: 0.3rem;
+}
+.footer .fab, .footer .fas {
+    transition: color 0.3s ease;
+}
+.footer a:hover i {
+    color: var(--light-purple) !important;
+}
+
+/* Modal */
+.modal-header {
+    background-color: var(--primary-purple);
+    color: var(--text-light);
+}
+.modal-header .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+.modal-title {
+    font-weight: 600;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: var(--primary-purple);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+.back-to-top i {
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 0;
+}
+.back-to-top:hover {
+    background: var(--secondary-purple);
+    color: #fff;
+}
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
