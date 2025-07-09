@@ -1,188 +1,184 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denis Yunda Portofolio</title>
+    <title>Denis Yunda Putri Kurnia Portfolio | Front-end Developer & Videographer</title>
+    
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#page-top">Denis Yunda</a>
+            <a class="navbar-brand fw-bold" href="#hero">Denis Yunda</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portofolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <header class="hero-section d-flex align-items-center justify-content-center text-white text-center" id="hero">
-    <div class="container">
-        <h1 class="display-3 fw-bold">Hello, I'm Denis Yunda!</h1>
-        <p class="lead my-4">
-            <span class="d-inline-flex align-items-center">
-                <i class="fas fa-laptop-code me-2"></i>Front-end Developer
-            </span>,
-            Videographer, and Camera Operator.
-            <br>
-            <span class="d-inline-flex align-items-center">
-                <i class="fas fa-location-dot me-2"></i>Jakarta, Indonesia.
-            </span>
-        </p>
-        <a href="#portfolio" class="btn btn-lg btn-outline-light hero-cta-btn">View Projects <i class="fas fa-arrow-right ms-2"></i></a>
-    </div>
-</header>
+        <div class="container" data-aos="zoom-in">
+            <h1 class="display-3 fw-bold">Hello, I'm Denis Yunda Putri Kurnia!</h1>
+            <p class="lead my-4"><span id="typed-text"></span></p>
+            <a href="#portfolio" class="btn btn-lg btn-outline-light hero-cta-btn">View My Work <i class="fas fa-arrow-right ms-2"></i></a>
+        </div>
+    </header>
 
     <section id="about" class="py-5">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="section-title">About Me</h2>
-            <hr class="title-hr">
-        </div>
-        <div class="row align-items-center">
-            <div class="col-lg-4 mb-4 mb-lg-0 text-center">
-                <img src="images/denis.jpeg" alt="Denis Yunda" class="img-fluid rounded-circle shadow-lg about-img">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <hr class="title-hr">
             </div>
-            <div class="col-lg-8">
-                <h3 class="mb-3 fw-light">Hello, I'm <span class="fw-bold primary-text">Denis Yunda</span>.</h3>
-                <p class="lead text-muted">
-                    As an <span class="fw-semibold">Informatics Engineering student currently in my 6th semester at Universitas Pamulang</span>, I believe in the power of visuals and technology to tell compelling stories. This belief fuels my dedication as a Front-End Developer, where I focus on designing and building websites that are not only functional but also visually delightful. I've already <span class="fw-semibold">gained some experience in creating simple websites</span> and am passionate about continuously developing my skills in this dynamic field.
-                </p>
-                <p class="text-muted">
-                    Beyond the world of code, the camera lens is my close companion. I actively work as a <span class="fw-semibold">freelance Videographer, Camera Operator, and Video Editor</span>. In these roles, I find joy in framing the world, capturing emotions, and transforming them into impactful visual narratives. Whether I'm developing an elegant user interface or producing cinematic video, my goal is always the same: to create memorable, high-quality work.
-                </p>
-                <div class="mt-4">
-                    <a href="#contact" class="btn btn-primary-custom me-2">Contact Me</a>
-                    <a href="assets/CV-DenisYundaPutriKurnia.pdf" class="btn btn-outline-primary-custom" target="_blank" download="CV_DenisYunda.pdf">CV Download <i class="fas fa-download ms-2"></i></a>
+            <div class="row align-items-center">
+                <div class="col-lg-4 mb-4 mb-lg-0 text-center" data-aos="fade-right" data-aos-delay="100">
+                    <img src="images/denis.jpeg" alt="Denis Yunda profile picture" class="img-fluid rounded-circle shadow-lg about-img">
+                </div>
+                <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+                    <h3 class="mb-3 fw-light">Hello, I'm <span class="fw-bold primary-text">Denis Yunda Putri Kurnia</span>.</h3>
+                    <p class="lead text-muted">As an <span class="fw-semibold">Informatics Engineering student currently in my 6th semester at Pamulang University</span>, I believe in the power of visuals and technology to tell compelling stories. This belief fuels my dedication as a Front-End Developer, where I focus on designing and building websites that are not only functional but also visually delightful.</p>
+                    <p class="text-muted">Beyond the world of code, the camera lens is my close companion. I am active as a <span class="fw-semibold">freelance Videographer, Camera Operator, and Video Editor</span>. In these roles, I find joy in framing the world, capturing emotions, and transforming them into impactful visual narratives. Whether I'm developing an elegant user interface or producing cinematic video, my goal is always the same: to create memorable, high-quality work.</p>
+                    <div class="mt-4">
+                        <a href="#contact" class="btn btn-primary-custom me-2">Contact Me</a>
+                        <a href="assets/CV-DenisYundaPutriKurnia.pdf" class="btn btn-outline-primary-custom" target="_blank" download="CV_DenisYunda.pdf">Download CV <i class="fas fa-download ms-2"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <section id="services" class="py-5 bg-light-custom">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="section-title">Services & Expertise</h2>
-            <hr class="title-hr">
-        </div>
-        <div class="row text-center g-4 justify-content-center">
-            <div class="col-md-6 col-lg-4">
-                <div class="service-card p-4 shadow-sm h-100">
-                    <div class="service-icon mb-3">
-                        <i class="fas fa-laptop-code fa-3x"></i>
-                    </div>
-                    <h4 class="fw-semibold mb-2">Front-End Development</h4>
-                    <p class="text-muted">
-                        Crafting responsive, modern websites and intuitive user interfaces. My work focuses on bringing designs to life with clean code, ensuring a seamless user experience across all devices. This includes:
-                    </p>
-                    <ul class="list-unstyled text-muted text-start small mt-2">
-                        <li><i class="fas fa-check-circle primary-text me-2"></i>Dynamic Web Development</li>
-                        <li><i class="fas fa-check-circle primary-text me-2"></i>Engaging UI/UX Design</li>
-                        <li><i class="fas fa-check-circle primary-text me-2"></i>Cross-browser Compatibility</li>
-                    </ul>
-                </div>
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Services & Expertise</h2>
+                <hr class="title-hr">
             </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="service-card p-4 shadow-sm h-100">
-                    <div class="service-icon mb-3">
-                        <i class="fas fa-video fa-3x"></i>
+            <div class="row text-center g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card p-4 shadow-sm h-100">
+                        <div class="service-icon mb-3"> <i class="fas fa-laptop-code fa-3x"></i> </div>
+                        <h4 class="fw-semibold mb-2">Front-End Development</h4>
+                        <p class="text-muted">Crafting responsive, modern websites and intuitive user interfaces. My work focuses on bringing designs to life with clean code for a seamless user experience across all devices.</p>
                     </div>
-                    <h4 class="fw-semibold mb-2">Videography</h4>
-                    <p class="text-muted">
-                        Producing compelling video content from concept to final cut. I specialize in storytelling through motion, whether it's for promotional material, documentaries, events, or creative projects. My services include planning, shooting, and post-production editing.
-                    </p>
                 </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="service-card p-4 shadow-sm h-100">
-                    <div class="service-icon mb-3">
-                        <i class="fas fa-camera-retro fa-3x"></i>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card p-4 shadow-sm h-100">
+                        <div class="service-icon mb-3"> <i class="fas fa-video fa-3x"></i> </div>
+                        <h4 class="fw-semibold mb-2">Videography</h4>
+                        <p class="text-muted">Producing compelling video content from concept to final cut. I specialize in storytelling through motion for promotional material, events, or creative projects.</p>
                     </div>
-                    <h4 class="fw-semibold mb-2">Camera Operation</h4>
-                    <p class="text-muted">
-                        Providing skilled camera operation to capture high-quality footage. With a keen eye for composition, lighting, and technical detail, I ensure every shot is perfectly framed and executed to meet the creative vision of the project, whether live events or scripted productions.
-                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card p-4 shadow-sm h-100">
+                        <div class="service-icon mb-3"> <i class="fas fa-camera-retro fa-3x"></i> </div>
+                        <h4 class="fw-semibold mb-2">Camera Operation</h4>
+                        <p class="text-muted">Providing skilled camera operation with a keen eye for composition, lighting, and detail to ensure every shot meets the creative vision of the project.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <section id="portfolio" class="py-5">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Projects Portofolio</h2>
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Projects Portfolio</h2>
                 <hr class="title-hr">
             </div>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card portfolio-card h-100">
-                        <img src="images/rock-paper-scissors.png" class="card-img-top" alt="Proyek 1">
+                        <img src="images/rock-paper-scissors.png" class="card-img-top" alt="Rock Paper Scissors Game Project">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-semibold">Rock Paper Scissors Game</h5>
-                            <p class="card-text text-muted small">Category: Web Programming</p>
-                            <p class="card-text flex-grow-1">A simple and interactive Rock Paper Scissors game built with fundamental web technologies.</p>
-                            <button class="btn btn-sm btn-primary-custom mt-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">Details</button>
+                            <p class="card-text text-muted small">Category: Web App</p>
+                            <p class="card-text flex-grow-1">An interactive Rock Paper Scissors game built with fundamental web technologies.</p>
+                            <button class="btn btn-sm btn-primary-custom mt-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">View Details</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card portfolio-card h-100">
-                        <img src="images/movie-tvshow.png" class="card-img-top" alt="Proyek 2">
+                        <img src="images/movie-tvshow.png" class="card-img-top" alt="Movie & TV Show List Project">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-semibold">Movie & TV Show List</h5>
-                            <p class="card-text text-muted small">Category: Web Programming</p>
-                            <p class="card-text flex-grow-1">Movie & TV Show recommendation web app using TheMovieDB API. Built with HTML, CSS, Bootstrap, and JavaScript.</p>
-                             <button class="btn btn-sm btn-primary-custom mt-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">Details</button>
+                            <p class="card-text text-muted small">Category: Web App / API</p>
+                            <p class="card-text flex-grow-1">A movie discovery web app using TheMovieDB API, built with vanilla JavaScript.</p>
+                             <button class="btn btn-sm btn-primary-custom mt-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">View Details</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card portfolio-card h-100">
-                        <img src="images/video.png" class="card-img-top" alt="Proyek 3">
+                        <img src="images/truck-rental-dashboard-preview.png" class="card-img-top" alt="PT. Mitra Buana Suradinata Truck Rental Website Project">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold">PT. Mitra Buana Suradinata Truck Rental Website</h5>
+                            <p class="card-text text-muted small">Category: Web Application, Admin Dashboard</p>
+                            <p class="card-text flex-grow-1">Developed a comprehensive admin management dashboard and robust backend for a truck rental service.</p>
+                            <button class="btn btn-sm btn-primary-custom mt-auto" data-bs-toggle="modal" data-bs-target="#portfolioModalPTMBS">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card portfolio-card h-100">
+                        <img src="images/tictactoe.png" class="card-img-top" alt="Tic Tac Toe Game Project">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold">Tic Tac Toe Game</h5>
+                            <p class="card-text text-muted small">Category: Web App</p>
+                            <p class="card-text flex-grow-1">A classic Tic Tac Toe game page built with semantic HTML and modern JavaScript.</p>
+                            <button class="btn btn-sm btn-primary-custom mt-auto" data-bs-toggle="modal" data-bs-target="#portfolioModalTicTacToe">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card portfolio-card h-100">
+                        <img src="images/susun15.jpg" class="card-img-top" alt="15 Puzzle Game Project">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold">15 Puzzle Game</h5>
+                            <p class="card-text text-muted small">Category: Mobile Game</p>
+                            <p class="card-text flex-grow-1">A simple puzzle game of arranging random numbers from 1 to 15, built for the Android platform.</p>
+                            <button class="btn btn-sm btn-primary-custom mt-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card portfolio-card h-100">
+                        <img src="images/color-palette.png" class="card-img-top" alt="Color Palette Generator Project">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold">Color Palette Generator</h5>
+                            <p class="card-text text-muted small">Category: Web App / Utility</p>
+                            <p class="card-text flex-grow-1">A web-based tool to create and copy random color palette hex codes instantly.</p>
+                            <button class="btn btn-sm btn-primary-custom mt-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card portfolio-card h-100">
+                        <img src="images/video.png" class="card-img-top" alt="Mozaik Video Project">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-semibold">Mozaik</h5>
                             <p class="card-text text-muted small">Category: Video Project</p>
-                            <p class="card-text flex-grow-1">A video project by Denis Yunda.</p>
-                            <button class="btn btn-sm btn-primary-custom mt-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">Details</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card portfolio-card h-100">
-                        <img src="images/susun15.jpg" class="card-img-top" alt="Proyek 4">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-semibold">Susun Lima Belas</h5>
-                            <p class="card-text text-muted small">Category: Mobile Programming</p>
-                            <p class="card-text flex-grow-1">A simple puzzle games of composing random numbers from 1 to 15.</p>
-                            <button class="btn btn-sm btn-primary-custom mt-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">Details</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card portfolio-card h-100">
-                        <img src="images/color-palette.png" class="card-img-top" alt="Proyek 5">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-semibold">Color Palette</h5>
-                            <p class="card-text text-muted small">Category: Web Programming</p>
-                            <p class="card-text flex-grow-1">A simple and interactive Color Palette Generator built with HTML, CSS, and JavaScript. Click to generate random color palettes and copy hex codes instantly.</p>
-                            <button class="btn btn-sm btn-primary-custom mt-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">Details</button>
+                            <p class="card-text flex-grow-1">A personal video project combining poetry and visuals to convey a heartfelt message.</p>
+                            <button class="btn btn-sm btn-primary-custom mt-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -191,37 +187,37 @@
     </section>
 
     <section id="contact" class="py-5 bg-light-custom">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="section-title">Contact Me</h2>
-            <hr class="title-hr">
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-                <p class="lead mb-4">
-                    I'd love to hear from you! Feel free to contact me through any of the platforms below or send me an email directly.
-                </p>
-                <div class="contact-links-container">
-                    <a href="mailto:denis2002yunda@gmail.com" class="btn btn-lg btn-primary-custom mb-3 mx-2">
-                        <i class="fas fa-envelope me-2"></i> Email Me
-                    </a>
-                    <a href="https://www.linkedin.com/in/denisyunda/" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-info text-white mb-3 mx-2" style="background-color: #0077B5; border-color: #0077B5;">
-                        <i class="fab fa-linkedin me-2"></i> LinkedIn
-                    </a>
-                    <a href="https://instagram.com/denisyundaa" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-danger mb-3 mx-2" style="background-color: #E4405F; border-color: #E4405F;">
-                        <i class="fab fa-instagram me-2"></i> Instagram
-                    </a>
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Contact Me</h2>
+                <hr class="title-hr">
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <p class="lead mb-4">I'd love to hear from you! Feel free to contact me through any of the platforms below or send me an email directly.</p>
+                    <div class="contact-links-container">
+                        <a href="mailto:denis2002yunda@gmail.com" class="btn btn-lg btn-primary-custom mb-3 mx-2">
+                            <i class="fas fa-envelope me-2"></i> Email Me
+                        </a>
+                        <a href="https://www.linkedin.com/in/denisyunda/" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-info text-white mb-3 mx-2" style="background-color: #0077B5; border-color: #0077B5;">
+                            <i class="fab fa-linkedin me-2"></i> LinkedIn
+                        </a>
+                        <a href="https://instagram.com/denisyundaa" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-danger mb-3 mx-2" style="background-color: #E4405F; border-color: #E4405F;">
+                            <i class="fab fa-instagram me-2"></i> Instagram
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <footer class="footer text-center py-4 text-white">
         <div class="container">
-            <p class="mb-2">&copy; <span id="currentYear"></span> Denis Yunda. All Rights Reserved.</p>
+            <p class="mb-2">© <span id="currentYear"></span> Denis Yunda. All Rights Reserved.</p>
             <div class="mt-2">
-                <a href="https://github.com/denisyundaa" class="text-white me-2"><i class="fab fa-github fa-lg"></i></a>
+                 <a href="https://www.linkedin.com/in/denisyunda/" target="_blank" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="https://github.com/denisyundaa" target="_blank" class="text-white me-3"><i class="fab fa-github fa-lg"></i></a>
+                <a href="https://instagram.com/denisyundaa" target="_blank" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
             </div>
         </div>
     </footer>
@@ -229,147 +225,256 @@
     <div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1Label" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="portfolioModal1Label">Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+                <div class="modal-header"><h5 class="modal-title" id="portfolioModal1Label">Case Study: Rock Paper Scissors Game</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-lg-7 mb-3 mb-lg-0">
-                            <img src="images/rock-paper-scissors.png" class="img-fluid rounded" alt="Proyek 1 Detail">
-                        </div>
+                        <div class="col-lg-7 mb-4 mb-lg-0"><img src="images/rock-paper-scissors.png" class="img-fluid rounded shadow-sm" alt="Proyek 1 Detail"></div>
                         <div class="col-lg-5">
-                            <h3 class="fw-semibold">Rock Paper Scissors Game</h3>
-                            <p class="text-muted small">Category: Web Design</p>
-                            <p>A simple and interactive Rock Paper Scissors game built with fundamental web technologies. Challenge yourself against the computer and be the first to score 5 points!</p>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check-circle primary-text me-2"></i>Player vs CPU, Point System, Classic Rules.</li>
-                                <li><i class="fas fa-check-circle primary-text me-2"></i>Technologies Used: HTML5, CSS3, Bootstrap 5, Font Awesome, JavaScript (ES6+).</li>
+                            <h4 class="fw-semibold">The Challenge</h4>
+                            <p class="text-muted">The goal was to build a fully functional and interactive Rock Paper Scissors game using only fundamental web technologies (HTML, CSS, JavaScript) to solidify understanding of DOM manipulation and event handling.</p>
+
+                            <h4 class="fw-semibold mt-4">My Role</h4>
+                            <p class="text-muted">I was the sole developer for this project, responsible for the entire process from UI design and layout to implementing the game logic and styling.</p>
+                            
+                            <h4 class="fw-semibold mt-4">Technologies Used</h4>
+                            <ul class="list-unstyled text-muted">
+                                <li><i class="fab fa-html5 primary-text me-2"></i>HTML5 for structure</li>
+                                <li><i class="fab fa-css3-alt primary-text me-2"></i>CSS3 & Bootstrap 5 for styling</li>
+                                <li><i class="fab fa-js-square primary-text me-2"></i>Vanilla JavaScript for game logic</li>
                             </ul>
-                            <a href="https://denisyundaa.github.io/rock-paper-scissors/" class="btn btn-primary-custom btn-sm mt-2" target="_blank">Go To Website <i class="fas fa-external-link-alt ms-1"></i></a>
+
+                            <h4 class="fw-semibold mt-4">The Outcome</h4>
+                            <p class="text-muted">The result is a responsive, engaging web-based game where a player competes against the computer. The project successfully demonstrates core JavaScript skills in a fun, interactive format.</p>
+                            <a href="https://denisyundaa.github.io/rock-paper-scissors/" class="btn btn-primary-custom btn-sm mt-3" target="_blank">View Live Project <i class="fas fa-external-link-alt ms-1"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
+         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
-                 <div class="modal-header">
-                    <h5 class="modal-title" id="portfolioModal2Label">Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+                <div class="modal-header"><h5 class="modal-title" id="portfolioModal2Label">Case Study: Movie & TV Show Discovery</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-lg-7 mb-3 mb-lg-0">
-                            <img src="images/movie-tvshow.png" class="img-fluid rounded" alt="Proyek 2 Detail">
-                        </div>
+                        <div class="col-lg-7 mb-4 mb-lg-0"><img src="images/movie-tvshow.png" class="img-fluid rounded shadow-sm" alt="Proyek 2 Detail"></div>
                         <div class="col-lg-5">
-                            <h3 class="fw-semibold">Movie & TV Show List</h3>
-                            <p class="text-muted small">Category: Web Design</p>
-                            <p>Movie & TV Show recommendation web app using TheMovieDB API. Built with HTML, CSS, Bootstrap, and JavaScript.
-                                <br>This project is a frontend web application that provides popular movie and TV show recommendations and allows users to search for specific titles. This project is built using HTML, CSS (with Bootstrap 5), and vanilla JavaScript, and dynamically fetches data from TheMovieDB (TMDB) API.
-                            </p>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check-circle primary-text me-2"></i>Dual Categories: Choose to explore "Movies" or "TV Shows."</li>
-                                <li><i class="fas fa-check-circle primary-text me-2"></i>Currently Popular: Displays a list of the most popular movies or TV shows by default.</li>
-                                <li><i class="fas fa-check-circle primary-text me-2"></i>Dynamic Search: Search for movies or TV shows by title.</li>
+                            <h4 class="fw-semibold">The Challenge</h4>
+                            <p class="text-muted">The main challenge was to create a client-side application that could communicate with a third-party API (TheMovieDB), fetch data asynchronously, and display it dynamically to the user in a clean and intuitive interface.</p>
+
+                            <h4 class="fw-semibold mt-4">My Role</h4>
+                            <p class="text-muted">As the front-end developer, I designed the user interface, managed the API integration, implemented the search functionality, and ensured the application was fully responsive.</p>
+                            
+                            <h4 class="fw-semibold mt-4">Technologies Used</h4>
+                            <ul class="list-unstyled text-muted">
+                                <li><i class="fab fa-html5 primary-text me-2"></i>HTML5 for structure</li>
+                                <li><i class="fab fa-css3-alt primary-text me-2"></i>Bootstrap 5 for responsive layout</li>
+                                <li><i class="fab fa-js-square primary-text me-2"></i>JavaScript (Fetch API) for data retrieval</li>
                             </ul>
-                            <a href="https://denisyundaa.github.io/movie-tvshow-list/" class="btn btn-primary-custom btn-sm mt-2" target="_blank">Go To Website <i class="fas fa-external-link-alt ms-1"></i></a>
+
+                            <h4 class="fw-semibold mt-4">The Outcome</h4>
+                            <p class="text-muted">This project successfully demonstrates the ability to work with external APIs. The final product allows users to browse popular movies/TV shows and search for specific titles, showcasing practical front-end skills.</p>
+                            <a href="https://denisyundaa.github.io/movie-tvshow-list/" class="btn btn-primary-custom btn-sm mt-3" target="_blank">View Live Project <i class="fas fa-external-link-alt ms-1"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="portfolioModalPTMBS" tabindex="-1" aria-labelledby="portfolioModalPTMBSLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="portfolioModalPTMBSLabel">Case Study: PT. Mitra Buana Suradinata Truck Rental Website</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7 mb-4 mb-lg-0">
+                        <img src="images/truck-rental-dashboard-main.png" class="img-fluid rounded shadow-sm" alt="Truck Rental Dashboard Main View">
+                    </div>
+                    <div class="col-lg-5">
+                        <h4 class="fw-semibold">The Challenge</h4>
+                        <p class="text-muted">As part of a 3-month research internship, the objective was to develop an efficient web-based system for PT. Mitra Buana Suradinata to manage their truck rental operations, specifically focusing on an administrative dashboard that streamlines order processing and vehicle management.</p>
+
+                        <h4 class="fw-semibold mt-4">My Role</h4>
+                        <p class="text-muted">I was responsible for the backend development, designing and implementing the admin management dashboard, and handling the entire database management. This included creating APIs for data interaction, ensuring data integrity, and developing the core logic for order tracking, status updates, and vehicle inventory.</p>
+
+                        <h4 class="fw-semibold mt-4">Team Collaboration</h4>
+                        <ul class="list-unstyled text-muted">
+                            <li><i class="fas fa-code primary-text me-2"></i>Taufiq: Spearheaded the frontend development, ensuring an intuitive and engaging user interface for both customers and administrators.</li>
+                            <li><i class="fas fa-lightbulb primary-text me-2"></i>Dini: Managed the research report aspect of our internship and served as the key liaison for communication between our intern team and the company.</li>
+                        </ul>
+
+                        <h4 class="fw-semibold mt-4">Technologies Used</h4>
+                        <ul class="list-unstyled text-muted">
+                            <li><i class="fab fa-php primary-text me-2"></i>PHP for Backend Logic</li>
+                            <li><i class="fas fa-database primary-text me-2"></i>MySQL for Database Management</li>
+                            <li><i class="fas fa-server primary-text me-2"></i>Apache Server</li>
+                            <li><i class="fab fa-html5 primary-text me-2"></i>HTML5 for structure</li>
+                            <li><i class="fab fa-css3-alt primary-text me-2"></i>CSS3 & Bootstrap 5 for styling (Frontend)</li>
+                            <li><i class="fab fa-js-square primary-text me-2"></i>JavaScript (Frontend)</li>
+                        </ul>
+
+                        <h4 class="fw-semibold mt-4">The Outcome</h4>
+                        <p class="text-muted">The project resulted in a robust and user-friendly administrative dashboard capable of efficiently managing truck rental orders, tracking their statuses (pending, paid, cancelled), maintaining vehicle inventory, and generating comprehensive transaction reports. My contribution significantly improved the operational workflow for the company's internal management.</p>
+                        <a href="https://github.com/denisyundaa/rental-truck.git" class="btn btn-primary-custom btn-sm mt-3" target="_blank">View Repository <i class="fas fa-external-link-alt ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="portfolioModalTicTacToe" tabindex="-1" aria-labelledby="portfolioModalTicTacToeLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="portfolioModalTicTacToeLabel">Case Study: Tic Tac Toe Game</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7 mb-4 mb-lg-0">
+                        <img src="images/tictactoe.png" class="img-fluid rounded shadow-sm" alt="Tic Tac Toe project details">
+                    </div>
+                    <div class="col-lg-5">
+                        <h4 class="fw-semibold">The Challenge</h4>
+                        <p class="text-muted">The main goal was to create a clean, interactive Tic Tac Toe game and structure it within a semantic landing page. The project focuses on pure JavaScript for game logic and modern CSS for layout.</p>
+
+                        <h4 class="fw-semibold mt-4">My Role</h4>
+                        <p class="text-muted">As the sole developer, I was responsible for structuring the HTML semantically, designing the UI/UX for both the game and the landing page, and implementing the game's core logic with JavaScript.</p>
+                        
+                        <h4 class="fw-semibold mt-4">Technologies Used</h4>
+                        <ul class="list-unstyled text-muted">
+                            <li><i class="fab fa-html5 primary-text me-2"></i>Semantic HTML5 for structure</li>
+                            <li><i class="fab fa-css3-alt primary-text me-2"></i>CSS3 (Flexbox & Grid) for styling</li>
+                            <li><i class="fab fa-js-square primary-text me-2"></i>Vanilla JavaScript for game logic</li>
+                        </ul>
+
+                        <h4 class="fw-semibold mt-4">The Outcome</h4>
+                        <p class="text-muted">The result is a fully functional, responsive Tic Tac Toe game presented on a simple, one-page website. This project effectively showcases skills in DOM manipulation, event handling, and modern web layout techniques without frameworks.</p>
+                        
+                        <a href="https://denisyundaa.github.io/tictactoe/" class="btn btn-primary-custom btn-sm mt-3" target="_blank">View Live Project <i class="fas fa-external-link-alt ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
     <div class="modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3Label" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
-             <div class="modal-content">
-                 <div class="modal-header">
-                    <h5 class="modal-title" id="portfolioModal3Label">Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title" id="portfolioModal3Label">Case Study: "Mozaik" Video Project</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-lg-7 mb-3 mb-lg-0">
-                            <img src="images/video.png" class="img-fluid rounded" alt="Proyek 3 Detail">
-                        </div>
+                        <div class="col-lg-7 mb-4 mb-lg-0"><img src="images/video.png" class="img-fluid rounded shadow-sm" alt="Proyek 3 Detail"></div>
                         <div class="col-lg-5">
-                            <h3 class="fw-semibold">Mozaik</h3>
-                            <p class="text-muted small">Category: Video Project</p>
-                            <p>This video describes how much i love people around me and i describe it by a poem that i have made and pour it  into a video project.</p>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check-circle primary-text me-2"></i>Poem by Denis Yunda</li>
-                                <li><i class="fas fa-check-circle primary-text me-2"></i>Edited by Denis Yunda</li>
-                                <li><i class="fas fa-check-circle primary-text me-2"></i>Software: CapCut and Audacity</li>
+                            <h4 class="fw-semibold">The Creative Brief</h4>
+                            <p class="text-muted">The objective was to create a short, emotionally resonant video based on a personal poem. The goal was to translate written words into a compelling visual and auditory experience.</p>
+                            
+                            <h4 class="fw-semibold mt-4">My Role</h4>
+                            <p class="text-muted">I was responsible for the entire creative process: writing the script (poem), directing, cinematography (camera operation), and post-production (video editing, sound design).</p>
+                            
+                            <h4 class="fw-semibold mt-4">Software & Tools</h4>
+                            <ul class="list-unstyled text-muted">
+                                <li><i class="fas fa-video primary-text me-2"></i>CapCut for Video Editing</li>
+                                <li><i class="fas fa-wave-square primary-text me-2"></i>Audacity for Audio Recording & Editing</li>
+                                <li><i class="fas fa-camera primary-text me-2"></i>iPhone Camera for shooting</li>
                             </ul>
-                            <a href="https://youtu.be/6rARHojxBUI?si=m5aaORE2hE8jtFT4" class="btn btn-primary-custom btn-sm mt-2" target="_blank">Watch Video <i class="fas fa-external-link-alt ms-1"></i></a>
+
+                            <h4 class="fw-semibold mt-4">The Outcome</h4>
+                            <p class="text-muted">The final video, "Mozaik," is a personal piece that effectively blends poetic narration with carefully selected visuals, demonstrating skills in storytelling, video production, and editing.</p>
+                            <a href="https://youtu.be/6rARHojxBUI?si=m5aaORE2hE8jtFT4" class="btn btn-primary-custom btn-sm mt-3" target="_blank">Watch on YouTube <i class="fas fa-external-link-alt ms-1"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-             <div class="modal-content">
-                 <div class="modal-header">
-                    <h5 class="modal-title" id="portfolioModal4Label">Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-7 mb-3 mb-lg-0">
-                            <img src="images/susun15.jpg" class="img-fluid rounded" alt="Proyek 4 Detail">
-                        </div>
-                        <div class="col-lg-5">
-                            <h3 class="fw-semibold">Susun Lima Belas</h3>
-                            <p class="text-muted small">Category: Mobile Programming</p>
-                            <p>Puzzle Susun Lima Belas is a simple puzzle games of composing random numbers from 1 to 15. This project is recommended for you if you want to make a simple project games.</p>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check-circle primary-text me-2"></i>Programming Language: Java</li>
-                                <li><i class="fas fa-check-circle primary-text me-2"></i>Software: Android Studio</li>
-                            </ul>
-                            <a href="https://github.com/denisyundaa/puzzle_susun-lima-belas" class="btn btn-primary-custom btn-sm mt-2" target="_blank">Go To See The Code <i class="fas fa-external-link-alt ms-1"></i></a>
-                        </div>
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="portfolioModal4Label">Case Study: 15 Puzzle Game</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7 mb-4 mb-lg-0">
+                        <img src="images/susun15.jpg" class="img-fluid rounded shadow-sm" alt="15 Puzzle Game Project Detail">
+                    </div>
+                    <div class="col-lg-5">
+                        <h4 class="fw-semibold">The Challenge</h4>
+                        <p class="text-muted">The goal was to create a classic 15 Puzzle sliding game for Android. The main challenge was to implement the core game logic, including tile shuffling, valid move detection, and win-state checking, within the Java mobile environment.</p>
+                        
+                        <h4 class="fw-semibold mt-4">My Role</h4>
+                        <p class="text-muted">As the sole developer, I was responsible for designing the user interface in XML, developing the game's logic in Java, and packaging it into a functional Android application.</p>
+                        
+                        <h4 class="fw-semibold mt-4">Technologies Used</h4>
+                        <ul class="list-unstyled text-muted">
+                            <li><i class="fab fa-java primary-text me-2"></i>Programming Language: Java</li>
+                            <li><i class="fab fa-android primary-text me-2"></i>Software: Android Studio</li>
+                        </ul>
+
+                        <h4 class="fw-semibold mt-4">The Outcome</h4>
+                        <p class="text-muted">The result is a simple yet fully functional mobile game that demonstrates foundational skills in Android app development and object-oriented programming with Java.</p>
+                        <a href="https://github.com/denisyundaa/puzzle_susun-lima-belas" class="btn btn-primary-custom btn-sm mt-3" target="_blank">View Source Code <i class="fas fa-external-link-alt ms-1"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+
     <div class="modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-             <div class="modal-content">
-                 <div class="modal-header">
-                    <h5 class="modal-title" id="portfolioModal5Label">Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-7 mb-3 mb-lg-0">
-                            <img src="images/color-palette.png" class="img-fluid rounded" alt="Proyek 5 Detail">
-                        </div>
-                        <div class="col-lg-5">
-                            <h3 class="fw-semibold">Color Palette</h3>
-                            <p class="text-muted small">Category: Web Programming</p>
-                            <p>A simple and interactive Color Palette Generator built with HTML, CSS, and JavaScript. Click to generate random color palettes and copy hex codes instantly.</p>
-                             <ul class="list-unstyled">
-                                <li><i class="fas fa-check-circle primary-text me-2"></i>Generate random 5-color palettes with a single click.</li>
-                                <li><i class="fas fa-check-circle primary-text me-2"></i>Display HEX codes for each color.</li>
-                                <li><i class="fas fa-check-circle primary-text me-2"></i>Click-to-copy functionality for easy HEX code retrieval.</li>
-                            </ul>
-                            <a href="https://denisyundaa.github.io/color-palette/" class="btn btn-primary-custom btn-sm mt-2" target="_blank">Go To Website <i class="fas fa-external-link-alt ms-1"></i></a>
-                        </div>
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="portfolioModal5Label">Case Study: Color Palette Generator</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7 mb-4 mb-lg-0">
+                        <img src="images/color-palette.png" class="img-fluid rounded shadow-sm" alt="Color Palette Generator Project Detail">
+                    </div>
+                    <div class="col-lg-5">
+                        <h4 class="fw-semibold">The Challenge</h4>
+                        <p class="text-muted">To build a fast, user-friendly tool for designers to generate color schemes. The main technical challenge was creating an efficient random color generation logic and a seamless "click-to-copy" clipboard feature using vanilla JavaScript.</p>
+                        
+                        <h4 class="fw-semibold mt-4">My Role</h4>
+                        <p class="text-muted">As the sole developer, I designed the minimalist UI, wrote the color generation algorithm, and implemented all the interactive features to ensure a smooth and intuitive user experience.</p>
+                        
+                        <h4 class="fw-semibold mt-4">Technologies Used</h4>
+                        <ul class="list-unstyled text-muted">
+                            <li><i class="fab fa-html5 primary-text me-2"></i>HTML5 for structure</li>
+                            <li><i class="fab fa-css3-alt primary-text me-2"></i>CSS3 for styling</li>
+                            <li><i class="fab fa-js-square primary-text me-2"></i>JavaScript for all interactivity</li>
+                        </ul>
+
+                        <h4 class="fw-semibold mt-4">The Outcome</h4>
+                        <p class="text-muted">The result is a lightweight and practical web utility that provides instant color palettes. This project showcases proficiency in DOM manipulation and creating useful, interactive front-end tools from scratch.</p>
+                        <a href="https://denisyundaa.github.io/color-palette/" class="btn btn-primary-custom btn-sm mt-3" target="_blank">View Live Site <i class="fas fa-external-link-alt ms-1"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center shadow-lg"><i class="fas fa-arrow-up"></i></a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
