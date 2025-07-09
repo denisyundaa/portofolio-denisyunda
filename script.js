@@ -1,6 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Navbar Scroll Effect
+    // 1. Initialize AOS (Animate on Scroll)
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 50
+    });
+
+    // 2. Initialize Typed.js for the typing effect
+    if (document.getElementById('typed-text')) {
+        new Typed('#typed-text', {
+            strings: [
+                'Front-end Developer.',
+                'Videographer.',
+                'Camera Operator.',
+                'Based in Jakarta, Indonesia.'
+            ],
+            typeSpeed: 60,
+            backSpeed: 40,
+            backDelay: 2000,
+            startDelay: 500,
+            loop: true,
+        });
+    }
+
+    // 3. Navbar scroll effect
     const mainNav = document.getElementById('mainNav');
     if (mainNav) {
         const handleScroll = () => {
@@ -11,55 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
         window.addEventListener('scroll', handleScroll);
-        handleScroll(); // Initial check
+        handleScroll();
     }
-
-    // Smooth scroll untuk semua link internal & penyesuaian offset header
-    const internalLinks = document.querySelectorAll('a[href^="#"]');
-    internalLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            // Pastikan targetId bukan hanya "#" (untuk back-to-top atau link placeholder lain)
-            if (targetId && targetId.length > 1) {
-                const targetElement = document.querySelector(targetId);
-
-                if (targetElement) {
-                    let headerOffset = 0;
-                    if (mainNav && mainNav.classList.contains('fixed-top')) {
-                        headerOffset = mainNav.offsetHeight;
-                    }
-                    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-                    const offsetPosition = elementPosition - headerOffset;
-
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-
-                    // Untuk menutup navbar collapse di mobile setelah diklik
-                    const navbarToggler = document.querySelector('.navbar-toggler');
-                    const navbarCollapse = document.querySelector('.navbar-collapse');
-                    if (navbarToggler && navbarCollapse && navbarCollapse.classList.contains('show')) {
-                        if (!navbarToggler.classList.contains('collapsed')) {
-                            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-                                toggle: false // Hindari toggle ganda jika sudah ditangani Bootstrap
-                            });
-                            bsCollapse.hide();
-                        }
-                    }
-                }
-            }
-        });
-    });
-
-    // Update Tahun di Footer
+    
+    // 4. Update year in footer
     const currentYearElem = document.getElementById('currentYear');
     if (currentYearElem) {
         currentYearElem.textContent = new Date().getFullYear();
     }
 
-    // Back to Top Button
+    // 5. Back to Top button functionality
     const backToTopButton = document.querySelector('.back-to-top');
     if (backToTopButton) {
         const toggleBackToTop = () => {
@@ -69,13 +55,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 backToTopButton.classList.remove('active');
             }
         };
-        window.addEventListener('load', toggleBackToTop); // Tampilkan/sembunyikan saat load
-        document.addEventListener('scroll', toggleBackToTop); // Tampilkan/sembunyikan saat scroll
-
+        window.addEventListener('load', toggleBackToTop);
+        document.addEventListener('scroll', toggleBackToTop);
         backToTopButton.addEventListener('click', (e) => {
-            e.preventDefault(); // Mencegah # di URL jika href="#"
+            e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
 
+    // 6. Smooth scroll offset adjustment
+    const internalLinks = document.querySelectorAll('a[href^="#"]');
+    internalLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId && targetId.length > 1) {
+                e.preventDefault();
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const headerOffset = mainNav.offsetHeight;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                }
+            }
+        });
+    });
 });
